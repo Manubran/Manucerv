@@ -5,7 +5,6 @@
 
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(255, 255, 255);
     font-size: 1.3rem;
     line-height: 1.3em; 
     margin: 0;
@@ -66,84 +65,150 @@ body{
      background: #e04b4b;
  }
 
- /* skdashai */
+ /* CUERPO */
  .main{
-     margin: 5rem 0 0 0;
-     background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(fondo.jpg);
+     margin: 5.55rem 0 0 0;
+     background-image: url(Imagenes/fondo.jpg);
      background-size: cover;
      background-repeat: no-repeat;
- }
+     color: white;
+     width: 100%;
+     max-width: 1200;
+     height: 570px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
 
-.conte-padre{
-    width: 100%;
-    max-width: 1200;
-    height: 600px;
-    display: flex;
 }
-
-.conte{
-    width: 48%;
+#conte-main{
+    width: 100%;
     height: 570px;
-    margin: 10px;
-    border: 2px solid white;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#texmain{
+    margin: 15% 0 0 0;
+    text-align: center;
+}
+#div-button{
+    width: 250px;
+    height: 30px;
+    margin: auto auto;
+    padding: 12px 0 10px 0;
+    border-radius: 15px;
+    background-color: rgba(255, 234, 112, 0.6);
+}
+#button{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+#div-button:hover{
+    width: 250px;
+    height: 30px;
+    transform: scale(1.1);
+    margin: auto auto;
+    padding: 12px 0 10px 0;
+    border-radius: 15px;
+    background-color: rgba(252, 229, 97, 0.9);
+}
+#presen-padre{
+    width: 100%;
+    max-width: 850;
+    height: 400px;
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#presen-hijo{
+    width: 600px;
+    margin: 100px 0 25px 0;
+    text-align: center;
+}
+#firma{
+    margin: auto 130px;
+    width: 200px;
+}
+#foto-padre{
+    width: 100%;
+    height: 300px;
+}
+#foto-hijo{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+.fotof{
+    margin: 0px -2.5px;
+    width: 33.3%;
+}
+.art-padre{
+    width: 100%;
+    max-width: 850;
+    height: 400px;
+    background-color: #2e2e2e;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-#div1{
-    width: 300px;
-    height: 500px;
-    background-color: rgba(0, 0, 0, 0.7);
+#art-hijo{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#beer{
+    width: 15%;
     text-align: center;
-
 }
-
-.conte2{
-    width: 48%;
-    height: 570px;
-    margin: 10px;
-    border: 2px solid white;
+.art{
+    width: 22%;
+    height: 300px;
+    margin: 0 -20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
 }
+.art:hover{
 
-#foto2{
-    background-image: url(foto2.jpg);
-    width: 50%;
-    height: 150px;
-    border-radius: 10px;
-    background-size: cover;
-    margin: 5% 25% 2% 25%;
-
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.1);
 }
-
-#foto3{
-    background-image: url(foto3.jpg);
-    width: 50%;
-    height: 150px;
-    border-radius: 10px;
-    background-size: cover;
-    margin: 2% 25% 2% 25%;
+.fotob{
+    width: 60%;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: -3px 5px 40px 8px rgba(255, 255, 255, 0.75);
 }
-
-#foto4{
-    background-image: url(foto4.jpg);
-    width: 50%;
-    height: 150px;
-    border-radius: 10px;
-    background-size: cover;
-    margin: 2% 25% 2% 25%;
-}
-
 #pasador{
     background: #9e2222;
     color: white;
     padding: 2rem 0;
 }
+.flecha{
+    width: 15%;
+    height: 50px;
+}
+.flecha:hover{
+    color: chartreuse;
+}
+#button:hover {
+    transform: scale(1.2);
+}
 
- .footer{
+#footer{
      width: 100%;
      height: 100px;
-     background: #f2f2f2;
+     background: #2e2e2e;
      padding: 0 auto;
      display: flex;
      align-items: center;
@@ -153,6 +218,86 @@ body{
  .queloque{
      margin: 0 auto;
  }
+ 
+@media screen and (min-width:770px) and (max-width:992px){
+#foto-padre{
+    height: 200px;
+}
+#foto-hijo{
+    height: 200px;
+}
+.art-padre{
+    height: 700px;
+    display: flex;
+    align-items: flex-start;
+}
+#art-hijo{
+    flex-wrap: wrap;
+}
+#beer{
+    width: 40%;
+    margin: 30px 0 0 0;
+}
+.art{
+    width: 40%;
+    height: 300px;
+    margin: 30px 0 0 0;
+}
+#sub{
+    width: 40%;
+}
+}
+
+@media screen and (min-width:480px) and (max-width:770px){
+h1{
+    line-height: 50px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;  
+}
+#foto-padre{
+    height: 130px;
+}
+#foto-hijo{
+    height: 130px;
+}
+.art-padre{
+    height: 1000px;
+    display: flex;
+}
+#art-hijo{
+    display: flex;
+    flex-direction: column;
+}
+#beer{
+    width: 40%;
+    margin: 30px 0 0 0;
+}
+.art{
+    width: 40%;
+    height: 350px;
+    margin: 20px 0 0 0;
+    padding-bottom: 20px;
+    display: flex;
+}
+.fotob{
+    width: 60%;
+    height: 150px;
+}
+#pasador{
+    height: 30px;
+}
+p{
+    font-size: 0.9rem;
+}
+.flecha{
+    margin: -20px 0 10px 0;
+}
+ul{
+    font-size: 0.9rem;
+}
 
 
-
+}
